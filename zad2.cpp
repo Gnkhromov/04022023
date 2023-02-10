@@ -5,10 +5,14 @@ using namespace std;
 int main()
 {
     int kopeyka = 0;
-    cout << "Введите число от 1 до 99\n";
+    cout << "Введите число копеек от 1 до 99\n";
     cin >> kopeyka;
     cout << kopeyka;
-    if(kopeyka%10 == 1)
+    if(kopeyka == 11 || kopeyka == 12 || kopeyka == 13 || kopeyka == 14)
+    {
+     cout << " копеек";   
+    }
+    else if(kopeyka%10 == 1)
     {
         cout <<  " копейка";
     }
